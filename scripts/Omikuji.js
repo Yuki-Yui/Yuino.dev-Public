@@ -1,3 +1,8 @@
+const card = document.getElementById("card");
+const card_contents = document.getElementById("card_contents");
+const card_title = document.getElementById("card_title");
+const card_message = document.getElementById("card_message");
+
 function omikuji(){
     const kuji = {
         "大吉":["今日はきっといい日になるよ","ツイてるね","チャレンジしてみよう"],
@@ -8,31 +13,16 @@ function omikuji(){
     }
     const keys = Object.keys(kuji);
 
-    let card = document.getElementById("card");
-    let card_contents = document.getElementById("card_contents");
-    let card_title = document.getElementById("card_title");
-    let card_message = document.getElementById("card_message");
-    let count;
     let unsei = keys[Math.floor(Math.random()*keys.length)];
     let messages = kuji[unsei];
     let message = messages[Math.floor(Math.random()*messages.length)]
     card.style.display = "block";
-    let c = 0;
     card_title.innerHTML = unsei;
     card_message.innerHTML = message;
-    let timer = setInterval(() => {
-        c += 0.1;
-        if (c > 1){
-            clearInterval(timer);
-        }else{ 
-            card_contents.style.transform = "translateY(-50%) translateX(-50%) scale(" + c + ")";
-        }
-    }, 10);
-    count += 1;
-    
+    card_contents.classList.add("omikuji_open");
 }
 
 function ClosePanel(){
-  card.style.display = "none";
-  card_contents.style.transform = "translateY(-50%) translateX(-50%) scale(0)";
+    card.style.display = "none";
+    card_contents.classList.remove("omikuji_open");
 }

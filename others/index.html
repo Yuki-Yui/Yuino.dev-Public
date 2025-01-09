@@ -10,8 +10,9 @@
     <link rel="shortcut icon" type="image/png" sizes="512x512" href="/images/favicons/android-chrome-512x512.png">
     <link rel="manifest" href="/images/favicons/manifest.json">
     <link rel="stylesheet" href="/style.css?3.14">
-    <script src="/script.js?3.7" defer></script>
+    <script src="/script.js?3.8" defer></script>
     <script src="/scripts/Omikuji.js" defer></script>
+    <script src="/scripts/setting.js"></script>
 <!-- head_to -->
     <title>その他 - ゆいのページ</title>
     <meta name="description" content="その他いろいろなコンテンツへのリンクです。">
@@ -21,6 +22,63 @@
     <meta property="og:description" content="その他いろいろなコンテンツへのリンクです。" />    
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="ゆいのページ" />
+    <script defer>
+        const isDeviceAnimationOff = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+        const isDeviceDarkmodeOn = window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+        // 初期状態の設定
+        document.addEventListener('DOMContentLoaded', () => {
+            const isAnimation = getLocalStorage('animation');
+            const isDarkmode = getLocalStorage('darkmode');
+            const animation_select = document.getElementById('animation');
+            const darkmode_select = document.getElementById('darkmode');
+            animation_select.selectedIndex = isAnimation ?? 0;
+            darkmode_select.selectedIndex = isDarkmode ?? 2;  
+            // toggle_darkmode.checked = isDarkmodeOn ? isDarkmodeOn : isDeviceDarkmode;
+
+            // アニメーション
+            document.getElementById('animation').addEventListener('change', (e) => {
+                const Animation = e.target.selectedIndex;
+                switch (Animation) {
+                case 0: // アニメーションON
+                    document.documentElement.classList.remove('no-animations');
+                    break;
+                case 1: // アニメーションOFF
+                    document.documentElement.classList.add('no-animations');
+                    break;
+                case 2: // デバイスの設定に従う
+                    if (isDeviceAnimationOff){ // デバイスの設定がアニメーションON
+                        document.documentElement.classList.add('no-animations');
+                    } else { // デバイスの設定がアニメーションOFF
+                        document.documentElement.classList.remove('no-animations');
+                    }
+                    break;
+                }
+                setLocalStorage('animation', Animation);
+            });
+
+            // ダークモード
+            document.getElementById('darkmode').addEventListener('change', (e) => {
+                const Darkmode = e.target.selectedIndex;
+                switch (Darkmode) {
+                case 0: // ライトモード
+                    document.documentElement.classList.remove('darkmode');
+                    break;
+                case 1: // ダークモード
+                    document.documentElement.classList.add('darkmode');
+                    break;
+                case 2: // デバイスの設定に従う
+                    if (isDeviceDarkmodeOn){ // デバイスの設定がダークモード
+                        document.documentElement.classList.add('darkmode');
+                    } else { // デバイスの設定がライトモード
+                        document.documentElement.classList.remove('darkmode');
+                    }
+                break;
+                }
+                setLocalStorage('darkmode', Darkmode);
+            });
+        });
+    </script>
 </head>
 
 <body>
@@ -104,7 +162,29 @@
                     <dd>Twitterが動くくらい</dd>
             </dl>
         </p>
-        </section>
+    </section>
+
+    <section class="box">
+        <h2>各種設定</h2>
+        <hr class="titlebar">
+        <p>
+            サイト内の設定ができます。
+        </p>
+        <p>
+            <label>アニメーション</label>
+            <select name="animation" id="animation">
+                <option value="0">オン</option>
+                <option value="1">オフ</option>
+                <option value="2">デバイスの設定</option>
+            </select><br>
+            <label>テーマ</label>
+            <select name="darkmode" id="darkmode">
+                <option value="0">ライト</option>
+                <option value="1">ダーク</option>
+                <option value="2">デバイスの設定</option>
+            </select>
+        </p>
+    </section>
     </article>
 
     </main>
@@ -164,9 +244,9 @@
         </div>
     </aside>
     <div id="card">
-        <div id="card_background" onclick="ClosePanel('Add')"></div>
+        <div id="card_background" onclick="ClosePanel()"></div>
         <div id="card_contents">
-            <button id="card_close" class="center" onclick="ClosePanel('Add')"><div>×</div></button>
+            <button id="card_close" class="center" onclick="ClosePanel()"><div>×</div></button>
             <div id="card_title" class="center"></div>
             <div id="card_message" class="center"></div>
         </div>
@@ -180,7 +260,7 @@
     </button>
     <footer>
         <a href="/sitemap/">サイトマップ</a><br>
-        &copy; 2023-2024 ゆうきゆい
+        &copy; 2023-2025 ゆうきゆい
     </footer>
 <!-- footer_to -->
 
