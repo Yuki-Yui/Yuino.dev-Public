@@ -10,8 +10,9 @@
     <link rel="shortcut icon" type="image/png" sizes="512x512" href="/images/favicons/android-chrome-512x512.png">
     <link rel="manifest" href="/images/favicons/manifest.json">
     <link rel="stylesheet" href="/style.css?3.14">
-    <script src="/script.js?3.7" defer></script>
+    <script src="/script.js?3.8" defer></script>
     <script src="/scripts/Omikuji.js" defer></script>
+    <script src="/scripts/setting.js"></script>
 <!-- head_to -->
     <title>Title_Of_Blog_Article - ゆいブログ</title>
     <meta name="description" content="Description_Of_Blog_Article">
@@ -58,6 +59,13 @@
             Description_Of_Blog_Article
         </p>
     </div>
+    
+    <article class="box">
+        <section class="blog_index">
+        <h2>目次</h2>
+        </section>
+    </article>
+
     <article class="box">
         <section>
             <h2></h2>
@@ -158,9 +166,9 @@
         </div>
     </aside>
     <div id="card">
-        <div id="card_background" onclick="ClosePanel('Add')"></div>
+        <div id="card_background" onclick="ClosePanel()"></div>
         <div id="card_contents">
-            <button id="card_close" class="center" onclick="ClosePanel('Add')"><div>×</div></button>
+            <button id="card_close" class="center" onclick="ClosePanel()"><div>×</div></button>
             <div id="card_title" class="center"></div>
             <div id="card_message" class="center"></div>
         </div>
@@ -174,7 +182,7 @@
     </button>
     <footer>
         <a href="/sitemap/">サイトマップ</a><br>
-        &copy; 2023-2024 ゆうきゆい
+        &copy; 2023-2025 ゆうきゆい
     </footer>
 <!-- footer_to -->
 
