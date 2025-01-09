@@ -10,8 +10,9 @@
     <link rel="shortcut icon" type="image/png" sizes="512x512" href="/images/favicons/android-chrome-512x512.png">
     <link rel="manifest" href="/images/favicons/manifest.json">
     <link rel="stylesheet" href="/style.css?3.14">
-    <script src="/script.js?3.7" defer></script>
+    <script src="/script.js?3.8" defer></script>
     <script src="/scripts/Omikuji.js" defer></script>
+    <script src="/scripts/setting.js"></script>
 <!-- head_to -->
     <title>自宅環境紹介 - ゆいのページ</title>
     <meta name="description" content="自宅の環境を紹介します。">
@@ -47,86 +48,102 @@
         <hr class="titlebar">
         <p>
             パソコンとかのデスク環境を紹介するページ<br>そのうち画像とリンクはります<br>
-            最終更新：2024-05-03
+            最終更新：2024-12-17
         </p>
     </div>
 
     <article class="box">
         <section class="blog_index">
         <h2>目次</h2>
-        <details><summary>展開</summary>
-            <ul>
-                <li><a href="#section-1">パソコン</a></li>
+        <ol>
+            <li><a href="#section-1">パソコン</a>
                 <ul>
                     <li><a href="#section-1-1">メインPC</a></li>
                     <li><a href="#section-1-2">新テレビ用PC</a></li>
                     <li><a href="#section-1-3"><s>テレビ用PC</s> (退役済み)</a></li>
-                    <li><a href="#section-1-4">ジャンクデスクトップPC×3</a></li>
-                    <li><a href="#section-1-5">ノートPC</a></li>
-                    <li><a href="#section-1-6">自作PC</a></li>
+                    <li><a href="#section-1-4">ノートPC</a></li>
+                    <li><a href="#section-1-5">自作PC</a></li>
+                    <li><a href="#section-1-6">ジャンクPC</a></li>
                 </ul>
-                <li><a href="#section-2">サーバー</a></li>
+            </li>
+            <li><a href="#section-2">サーバー</a>
                 <ul>
                     <li><a href="#section-2-1">メインサーバー</a></li>
                     <li><a href="#section-2-2">Raspberry Pi</a></li>
                 </ul>
-                <li><a href="#section-3">タブレット</a></li>
+            </li>
+            <li><a href="#section-3">タブレット</a>
                 <ul>
                     <li><a href="#section-3-1">ARROWS Tab Q736/P</a></li>
                     <li><a href="#section-3-2">ARROWS Tab Q508/SE</a></li>
                     <li><a href="#section-3-3">Windowsタブレットx2</a></li>
-                    <li><a href="#section-3-4"><s>FireHD 10</s>（退役済み）</a></li>
-                    <li><a href="#section-3-5"><s>iPad</s></a></li>
+                    <li><a href="#section-3-4">Logitec据え置きタブレット</a></li>
+                    <li><a href="#section-3-5"><s>FireHD 10</s> (退役済み)</a></li>
+                    <li><a href="#section-3-6"><s>iPad</s></a></li>
                 </ul>
-                <li><a href="#section-4">スマホ</a></li>
+            </li>
+            <li><a href="#section-4">スマホ</a>
                 <ul>
-                    <li><a href="#section-4-1">Pixel 6a</a></li>
-                    <li><a href="#section-4-2">Pixel 7a</a></li>
-                    <li><a href="#section-4-3">iPhone 12</a></li>
-                    <li><a href="#section-4-4">iPhone 14</a></li>
-                    <li><a href="#section-4-5">Xperia XZ1</a></li>
+                    <li><a href="#section-4-1">Google Pixel 6a</a></li>
+                    <li><a href="#section-4-2">Google Pixel 7a</a></li>
+                    <li><a href="#section-4-3"><s>Apple iPhone 12</s></a></li>
+                    <li><a href="#section-4-4">Apple iPhone 14</a></li>
+                    <li><a href="#section-4-5">SONY Xperia XZ1</a></li>
+                    <li><a href="#section-4-6">SONY Xperia 5 III</a></li>
                 </ul>
-                <li><a href="#section-5">周辺機器</a></li>
+            </li>
+            <li><a href="#section-5">周辺機器</a>
                 <ul>
                     <li><a href="#section-5-1">Anker PowerExpand+ 7-in-1 USB-C PD メディアハブ</a></li>
                     <li><a href="#section-5-2">SanDiskのUSBメモリ 64GB</a></li>
                 </ul>
-                <li><a href="#section-6">オーディオ関連</a></li>
+            </li>
+            <li><a href="#section-6">オーディオ関連</a>
                 <ul>
                     <li><a href="#section-6-1">スピーカー</a></li>
                     <li><a href="#section-6-2">完全ワイヤレスイヤホン</a></li>
                     <li><a href="#section-6-3">ワイヤレスヘッドホン</a></li>
                     <li><a href="#section-6-4"><s>スピーカー</s></a></li>
                 </ul>
-                <li><a href="#section-7">ネットワーク関連</a></li>
+            </li>
+            <li><a href="#section-7">ネットワーク関連</a>
                 <ul>
                     <li><a href="#section-7-1">Cat6a LANケーブル</a></li>
-                    <li><a href="#section-7-2">WiFi6対応アクセスポイント MERCUSYS AX1800</a></li>
-                    <li><a href="#section-7-3">NetGear 8ポートギガビットスイッチ GS108</a></li>
-                    <li><a href="#section-7-4">NetGear 24ポートギガビットスイッチ GSM7224v1</a></li>
+                    <li><a href="#section-7-2">YAMAHA RTX830</a></li>
+                    <li><a href="#section-7-3">WiFi6対応アクセスポイント MERCUSYS AX1800</a></li>
+                    <li><a href="#section-7-4">NetGear 8ポートギガビットスイッチ GS108</a></li>
+                    <li><a href="#section-7-5">NetGear 24ポートギガビットスイッチ GSM7224v1</a></li>
                 </ul>
-                <li><a href="#section-8">電源関連</a></li>
+            </li>
+            <li><a href="#section-8">電源関連</a>
                 <ul>
                     <li><a href="#section-8-1">10000mAh 20W モバイルバッテリー</a></li>
                     <li><a href="#section-8-2">USB PD 対応充電器 20W</a></li>
-                    <li><a href="#section-8-3">Anker Nano II 65W</a></li>
-                    <li><a href="#section-8-4">Elecom 電源タップ 10個口</a></li>
-                    <li><a href="#section-8-5">ダイソーの電源タップ</a></li>
-                    <li><a href="#section-8-6">ダイソーのUSB-Cケーブル</a></li>
+                    <li><a href="#section-8-3">USB PD 対応充電器 65W 3ポート</a></li>
+                    <li><a href="#section-8-4">Anker Nano II 65W</a></li>
+                    <li><a href="#section-8-5">Elecom 電源タップ 10個口</a></li>
+                    <li><a href="#section-8-6">ダイソーの電源タップ</a></li>
+                    <li><a href="#section-8-7">ダイソーのUSB-Cケーブル</a></li>
                 </ul>
-                <li><a href="#section-9">文房具</a></li>
+            </li>
+            <li><a href="#section-9">文房具</a>
                 <ul>
                     <li><a href="#section-9-1">関数電卓 CASIO fx-375ES A</a></li>
                     <li><a href="#section-9-2">17cm定規</a></li>
                 </ul>
-                <li><a href="#section-10">工具、電気小物</a></li>
+            </li>
+            <li><a href="#section-10">工具、電気小物、電子工作</a>
                 <ul>
                     <li><a href="#section-10-1">USB-C はんだごて T65</a></li>
                     <li><a href="#section-10-2">Amazonベーシックの充電池 単3・単4</a></li>
                     <li><a href="#section-10-3">デジタルノギス</a></li>
+                    <li><a href="#section-10-4">USB-C電力計</a></li>
+                    <li><a href="#section-10-5">USB-C可変電圧トリガーケーブル</a></li>
+                    <li><a href="#section-10-6">デジタルはかり</a></li>
                 </ul>
-            </ul>
-        </details>
+            </li>
+        </ol>
+
         </section>
     </article>
     
@@ -150,9 +167,10 @@
                         <dt>GPU</dt><dd><a href="https://jp.msi.com/Graphics-Card/GeForce-RTX-3080-VENTUS-3X-PLUS-10G-OC-LHR">MSI GeForce RTX™ 3080 VENTUS 3X PLUS 10G OC LHR</a></dd>
                         <dt>RAM</dt><dd>DDR4 80GB (16+16+16+32)</dd>
                         <dt>SSD</dt><dd>2TB (1TB+1TB)</dd>
+                        <dt>HDD</dt><dd>3TB (1TB+2TB)</dd>
                         <dt>マザーボード</dt><dd><a href="https://pg.asrock.com/mb/Intel/H670%20PG%20Riptide/index.jp.asp">ASRock H670 PG Riptide</a></dd>
                         <dt>電源</dt><dd>1000W EnhanceATX 3210GB1</dd>
-                        <dt>OS</dt><dd>Windows11 Home</dd>
+                        <dt>OS</dt><dd>Windows11 Pro 24H2</dd>
                     </dl>
                 </li>
                 <li>モニター
@@ -179,7 +197,7 @@
             <h3 id="section-1-2">新テレビ用PC</h3>
             <hr class="titlebar">
             <p>
-                ベッドで寝ながらYoutubeとかアニメとか見たり、テレビ録画したりに使ってる。
+                ベッドで寝ながらYoutubeとかアニメとか見たり、テレビ録画したり、NASのバックアップに使ってる。
                 <dl class="dllist">
                     <dt>CPU</dt><dd>Intel Core i5-6400</dd>
                     <dt>RAM</dt><dd>DDR4 16GB (8×2)</dd>
@@ -197,19 +215,19 @@
                 近々退役予定。
             </p>
         </div>
-        <div class="inbox">
+        <!-- <div class="inbox">
             <h3 id="section-1-4">ジャンクデスクトップPC×3</h3>
             <hr class="titlebar">
             <p>
                 i3-6100、i3-7100、i3-8100<br>
                 CPU目的で買ったパソコンがどんどん増えていく…
-                <!-- アキバで買ってきた。片方はi7-7700載せてサーバーにする予定。<br>
+                アキバで買ってきた。片方はi7-7700載せてサーバーにする予定。<br>
                 もう片方は思ったのと違くて完全にいらない子になっちゃった。<br>
-                <s>テレビ用パソコンになるかもちゃん。</s>→なった -->
+                <s>テレビ用パソコンになるかもちゃん。</s>→なった
             </p>
-        </div>
+        </div> -->
         <div class="inbox">
-            <h3 id="section-1-5">ノートPC</h3>
+            <h3 id="section-1-4">ノートPC</h3>
             <hr class="titlebar">
             <p>
                 Dynabook VZ<br>
@@ -221,18 +239,35 @@
             </p>
         </div>
         <div class="inbox">
-            <h3 id="section-1-6">自作PC</h3>
+            <h3 id="section-1-5">自作PC</h3>
             <hr class="titlebar">
             <p>
                 余ってたパーツで組んだ自作PC。<br>
                 ケースを500円でGETしたから組んだ。正直デカすぎていらない。
                 <dl class="dllist">
                     <dt>CPU</dt><dd>Intel Core i7-7700</dd>
-                    <dt>GPU</dt><dd>GTX 1060</dd>
+                    <dt>GPU</dt><dd>GTX 1060, Titan GTX X</dd>
                     <dt>RAM</dt><dd>DDR4 16GB (8×2)</dd>
-                    <dt>SSD</dt><dd>256GB</dd>
-                    <dt>OS</dt><dd>Windows10 Home</dd>
+                    <dt>SSD</dt><dd>M.2 SATA 256GB</dd>
+                    <dt>OS</dt><dd>Windows11 Pro 24H2</dd>
                 </dl>
+            </p>
+        </div>
+        <div class="inbox">
+            <h3 id="section-1-6">ジャンクPC</h3>
+            <hr class="titlebar">
+            <p>
+                動いたり動かなかったりするPCたち。
+                <ul>
+                    <li>ThinkPad×2</li>
+                    <li>HPのノートPC</li>
+                    <li>NECのノートPC</li>
+                    <li>DELLとかHPのデスクトップPC×5</li>
+                    <li>iMac</li>
+                    <li>Mac mini</li>
+                    <li>MacBook×2</li>
+                    <li>マザーボード×10(?)</li>
+                </ul>
             </p>
         </div>
     </section>
@@ -247,12 +282,13 @@
                 マイクラサーバーとゆいのページが動いてる。<br>
                 <s>がんばってくれたのでそろそろ休憩の時かも。</s>まだまだ働いてもらいます!!<br>
                 共有のストレージの管理もしてるけど切り離したほうがいいと思う。<br>
-                i7-7700搭載PCに置き換える予定だけど20%くらいしか性能アップしないんだね…(SSDクローンめんどいからしばらく放置)
+                i7-7700搭載PCに置き換える予定だけど20%くらいしか性能アップしないんだね…
+                <!-- (SSDクローンめんどいからしばらく放置) -->
                 <dl class="dllist">
                     <dt>CPU</dt><dd>Intel Core i7-4790</dd>
                     <dt>RAM</dt><dd>DDR3 32GB (8×4)</dd>
                     <dt>SSD</dt><dd><s>512GB</s> → 256GB</dd>
-                    <dt>HDD</dt><dd>1TB</dd>
+                    <dt>HDD</dt><dd>2TB (NAS)</dd>
                     <dt>OS</dt><dd>Windows10 Pro</dd>
                 </dl>
             </p>
@@ -264,7 +300,8 @@
                 確かRaspberry Pi3 Model B+<br>
                 監視カメラになってる。<br>
                 <s>WOLの踏み台にしたいと思いつつ1年経過。</s><br>
-                WOLの踏み台にした。(2023-12-27追記)
+                WOLの踏み台にした。(2023-12-27追記)<br>
+                Tailscaleのexitnodeとサブネットルーター。
             </p>
         </div>
     </section>
@@ -298,7 +335,7 @@
                 ちょっと強いAtom搭載だけどAtomなのでおしまい。<br>
                 <!-- iPadありかもしれないと思う今日この頃。<br> -->
                 軽いし小さいのでQ736導入してからもたまに使ってる。
-                授業でノートとる用
+                ノートPC持ち歩くほどでもないときに使ってる、アキバに行くときとか。
             </p>
         </div>
         <div class="inbox">
@@ -312,7 +349,15 @@
             </p>
         </div>
         <div class="inbox">
-            <h3 id="section-3-4"><s>FireHD 10</s>（退役済み）</h3>
+            <h3 id="section-3-4">Logitec据え置きタブレット</h3>
+            <hr class="titlebar">
+            <p>
+                日時とか持ち物とかを表示するサイネージ用。<br>
+                <a href="https://pc.logitec.co.jp/detail/7498.html">LT-H0310A</a>
+            </p>
+        </div>
+        <div class="inbox">
+            <h3 id="section-3-5"><s>FireHD 10</s> (退役済み)</h3>
             <hr class="titlebar">
             <p>
                 ノートPCのタブレット機能が死んだから買った。<br>
@@ -324,7 +369,7 @@
             </p>
         </div>
         <div class="inbox">
-            <h3 id="section-3-5"><s>iPad</s></h3>
+            <h3 id="section-3-6"><s>iPad</s></h3>
             <hr class="titlebar">
             <p>
                 高校で貸与された。<br>
@@ -339,7 +384,7 @@
         <h2 id="section-4">スマホ</h2>
         <hr class="titlebar">
         <div class="inbox">
-            <h3 id="section-4-1">Pixel 6a</h3>
+            <h3 id="section-4-1">Google Pixel 6a</h3>
             <hr class="titlebar">
             <p>
                 Nojimaで安く買った。<br>
@@ -349,27 +394,28 @@
             </p>
         </div>
         <div class="inbox">
-            <h3 id="section-4-2">Pixel 7a</h3>
+            <h3 id="section-4-2">Google Pixel 7a</h3>
             <hr class="titlebar">
             <p>
                 メイン。水色。かわいい。顔認証ついて便利になった。<br>
                 画面90Hz対応したらしいけど、バッテリーすぐなくなっちゃいそう?<br>
                 <s>初期化されるえげつないバグのせいでアプデ降ってこない… <a href="https://buzzap.jp/news/20231030-pixel-android14-storage-crash-bug-in-pixel7-pixel7a/">詳細</a></s><br>
                 2023年12月末にアプデが降ってきた。<br>
-                <s>今は着信が来ないバグがあるらしい、やばそう。</s> → 今はなおってるぽい
+                <s>今は着信が来ないバグがあるらしい、やばそう。</s> → 今はなおってるぽい？<br>
+                Pixel、カメラが暗いのかごはん写真をきれいに撮れない…
             </p>
         </div>
         <div class="inbox">
-            <h3 id="section-4-3">iPhone 12</h3>
+            <h3 id="section-4-3"><s>Apple iPhone 12</s></h3>
             <hr class="titlebar">
             <p>
-                サブ。ポイント還元による実質0円で2年レンタル。<br>
-                ストレージ64GBなのでゲームする人は厳しそうだけど私はしないのでOK<br>
+                サブ。ポイント還元による実質0円で2年レンタル。→返却済み<br>
+                ストレージ64GBなのでゲームする人は厳しそうだけど私はしないのでOK!<br>
                 純正の7000円くらいするレザーケースを500円で買ったので使ってる。
             </p>
         </div>
         <div class="inbox">
-            <h3 id="section-4-4">iPhone 14</h3>
+            <h3 id="section-4-4">Apple iPhone 14</h3>
             <hr class="titlebar">
             <p>
                 docomoにMNPして実質24円 + 事務手数料3850円 + 月々の通信費<br>
@@ -378,7 +424,7 @@
             </p>
         </div>
         <div class="inbox">
-            <h3 id="section-4-5">Xperia XZ1</h3>
+            <h3 id="section-4-5">SONY Xperia XZ1</h3>
             <hr class="titlebar">
             <p>
                 ジャンクで2500円で買った。<br>
@@ -386,6 +432,15 @@
                 割と見た目と使い勝手がいいしXperiaいいなになった。次のスマホはXperiaかな。<br>
                 ディスプレイの色設定とかもできてよい。<br>
                 昔の端末だからかジャンクだからか、バッテリー持ちがあんまりよくないのがちょっと悲しいけど普通にサクサク使える。
+            </p>
+        </div>
+        <div class="inbox">
+            <h3 id="section-4-6">SONY Xperia 5 III</h3>
+            <hr class="titlebar">
+            <p>
+                イオシスで2万円だったから買ってしまった。<br>
+                望遠レンズ搭載だし性能もめちゃくちゃいいし電池持ちもいいのでめちゃよい。<br>
+                画面が長いのどうなんだろと思ってたけど、細くて持ちやすいのとTwitterが見やすい。
             </p>
         </div>
     </section>
@@ -410,7 +465,7 @@
                 秋葉原のラジオデパートのお店で750円くらいで買える。安い。<br>
                 小さいけど小さすぎない感じが好き。<br>
                 速度は...まあ普通かな。<br>
-                OSインストール用にいくつか常備してる。
+                OSインストール用にいくつか常備してる。→Ventoy使うようになったので余ってる。
                 <a href="./images/sandisk_usbmemory_speed.png">速度</a><br>
                 <a href="https://amzn.asia/d/9UPssOq">商品リンク</a>
             </p>
@@ -476,7 +531,14 @@
             </p>
         </div>
         <div class="inbox">
-            <h3 id="section-7-2">WiFi6対応アクセスポイント MERCUSYS AX1800</h3>
+            <h3 id="section-7-2">YAMAHA RTX830</h3>
+            <hr class="titlebar">
+            <p>
+                コマンドでいろいろ設定できて楽しい。自宅ネットを自分で構築した。
+            </p>
+        </div>
+        <div class="inbox">
+            <h3 id="section-7-3">WiFi6対応アクセスポイント MERCUSYS AX1800</h3>
             <hr class="titlebar">
             <p>
                 アキバで3000円で買った。めっちゃ速くなった。<br>
@@ -484,7 +546,7 @@
             </p>
         </div>
         <div class="inbox">
-            <h3 id="section-7-3">NetGear 8ポートギガビットスイッチ GS108</h3>
+            <h3 id="section-7-4">NetGear 8ポートギガビットスイッチ GS108</h3>
             <hr class="titlebar">
             <p>
                 ふつう。<br>
@@ -492,7 +554,7 @@
             </p>
         </div>
         <div class="inbox">
-            <h3 id="section-7-4">NetGear 24ポートギガビットスイッチ GSM7224v1</h3>
+            <h3 id="section-7-5">NetGear 24ポートギガビットスイッチ GSM7224v1</h3>
             <hr class="titlebar">
             <p>
                 ファンがうるさすぎて使ってない。<br>
@@ -522,7 +584,16 @@
             </p>
         </div>
         <div class="inbox">
-            <h3 id="section-8-3">Anker Nano II 65W</h3>
+            <h3 id="section-8-3">USB PD 対応充電器 65W 3ポート</h3>
+            <hr class="titlebar">
+            <p>
+                65Wでる充電器が1500円だったので買った。スマホやPC充電用。<br>
+                ノイズがやばいのか、これつなげるとXperiaの指紋認証ができなくなる、ウケる<br>
+                <a href="https://amzn.asia/d/78PYTWn">商品リンク</a>
+            </p>
+        </div>
+        <div class="inbox">
+            <h3 id="section-8-4">Anker Nano II 65W</h3>
             <hr class="titlebar">
             <p>
                 充電が速い。小さいので持ち歩き用。<br>
@@ -530,7 +601,7 @@
             </p>
         </div>
         <div class="inbox">
-            <h3 id="section-8-4">Elecom 電源タップ 10個口</h3>
+            <h3 id="section-8-5">Elecom 電源タップ 10個口</h3>
             <hr class="titlebar">
             <p>
                 部屋のコンセントが少なすぎるのでデスク下に導入。<br>
@@ -539,14 +610,14 @@
             </p>
         </div>
         <div class="inbox">
-            <h3 id="section-8-5">ダイソーの電源タップ</h3>
+            <h3 id="section-8-6">ダイソーの電源タップ</h3>
             <hr class="titlebar">
             <p>
                 何個か使ってる。
             </p>
         </div>
         <div class="inbox">
-            <h3 id="section-8-6">ダイソーのUSB-Cケーブル</h3>
+            <h3 id="section-8-7">ダイソーのUSB-Cケーブル</h3>
             <hr class="titlebar">
             <p>
                 布製で触り心地と取り回しがいいかんじ。<br>
@@ -579,7 +650,7 @@
     </section>
     
     <section class="box">
-        <h2 id="section-10">工具、電気小物</h2>
+        <h2 id="section-10">工具、電気小物、電子工作</h2>
         <hr class="titlebar">
         <div class="inbox">
             <h3 id="section-10-1">USB-C はんだごて T65</h3>
@@ -588,14 +659,16 @@
                 USB-C給電できるはんだごて。<br>
                 モバイルバッテリーを持ち歩けばいつでもどこでもはんだ付けができる！<br>
                 手持ちの20Wモバイルバッテリーで動いた。<br>
-                <a href="https://akizukidenshi.com/catalog/g/g118315/">商品リンク</a>
+                <a href="https://akizukidenshi.com/catalog/g/g118315/">商品リンク</a><br>
+                こて先はアリエクで300円くらいで買った。<br>
+                <a href="https://ja.aliexpress.com/item/1005006107052028.html">商品リンク(AliExpress)</a>
             </p>
         </div>
         <div class="inbox">
             <h3 id="section-10-2">Amazonベーシックの充電池 単3・単4</h3>
             <hr class="titlebar">
             <p>
-                若干サイズが横長？使っていて困ったことはあんまりない。<br>
+                若干長い？使っていて困ったことはあんまりない。<br>
                 <a href="https://amzn.asia/d/89et2Do">単3 商品リンク</a><br>
                 <a href="https://amzn.asia/d/795edXQ">単4 商品リンク</a>
             </p>
@@ -606,6 +679,30 @@
             <p>
                 アキバにもよく売ってる激安ノギス。<br>
                 <a href="https://amzn.asia/d/ivT66zI">商品リンク</a>
+            </p>
+        </div>
+        <div class="inbox">
+            <h3 id="section-10-4">USB-C電力計</h3>
+            <hr class="titlebar">
+            <p>
+                便利。
+                <a href="https://amzn.asia/d/gXZ5Q2X">商品リンク</a>
+            </p>
+        </div>
+        <div class="inbox">
+            <h3 id="section-10-5">USB-C可変電圧トリガーケーブル</h3>
+            <hr class="titlebar">
+            <p>
+                簡易的な安定化電源として電子工作に使える。上の電力計と組み合わせるとよい。
+                <a href="https://amzn.asia/d/gzx3x0H">商品リンク</a>
+            </p>
+        </div>
+        <div class="inbox">
+            <h3 id="section-10-6">デジタルはかり</h3>
+            <hr class="titlebar">
+            <p>
+                精度は知らないけど小さくてよい。<br>
+                <a href="https://amzn.asia/d/hoknOff">商品リンク</a>
             </p>
         </div>
     </section>
@@ -681,9 +778,9 @@
         </div>
     </aside>
     <div id="card">
-        <div id="card_background" onclick="ClosePanel('Add')"></div>
+        <div id="card_background" onclick="ClosePanel()"></div>
         <div id="card_contents">
-            <button id="card_close" class="center" onclick="ClosePanel('Add')"><div>×</div></button>
+            <button id="card_close" class="center" onclick="ClosePanel()"><div>×</div></button>
             <div id="card_title" class="center"></div>
             <div id="card_message" class="center"></div>
         </div>
@@ -697,7 +794,7 @@
     </button>
     <footer>
         <a href="/sitemap/">サイトマップ</a><br>
-        &copy; 2023-2024 ゆうきゆい
+        &copy; 2023-2025 ゆうきゆい
     </footer>
 <!-- footer_to -->
 
