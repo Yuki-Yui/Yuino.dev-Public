@@ -1,5 +1,5 @@
 function display_history(){
-    const path = '/history.json';
+    const path = '/files/history.json';
     readJson(path)
     .then(data => {
         const path = location.pathname;

@@ -10,8 +10,9 @@
     <link rel="shortcut icon" type="image/png" sizes="512x512" href="/images/favicons/android-chrome-512x512.png">
     <link rel="manifest" href="/images/favicons/manifest.json">
     <link rel="stylesheet" href="/style.css?3.14">
-    <script src="/script.js?3.7" defer></script>
+    <script src="/script.js?3.8" defer></script>
     <script src="/scripts/Omikuji.js" defer></script>
+    <script src="/scripts/setting.js"></script>
 <!-- head_to -->
     <title>ドメインをCloudflareに移管した - ゆいブログ</title>
     <meta name="description" content="Google Domainsが滅びたのでCloudflareに移管しました。結構簡単にできました。">
@@ -65,11 +66,12 @@
         <h2>目次</h2>
         <ol>
             <li><a href="#section-1">はじめに</a></li>
-            <li><a href="#section-2">Google Domains側</a></li>
-            <ul>
-                <li><a href="#section-2-1">ドメインのロックを解除</a></li>
-                <li><a href="#section-2-2">認証コードを発行</a></li>
-            </ul>
+            <li><a href="#section-2">Google Domains側</a>
+                <ul>
+                    <li><a href="#section-2-1">ドメインのロックを解除</a></li>
+                    <li><a href="#section-2-2">認証コードを発行</a></li>
+                </ul>
+            </li>
             <li><a href="#section-3">Cloudflare側</a></li>
             <li><a href="#section-4">メールが届く</a></li>
             <li><a href="#section-5">ドメインの自動更新</a></li>
@@ -241,9 +243,9 @@
         </div>
     </aside>
     <div id="card">
-        <div id="card_background" onclick="ClosePanel('Add')"></div>
+        <div id="card_background" onclick="ClosePanel()"></div>
         <div id="card_contents">
-            <button id="card_close" class="center" onclick="ClosePanel('Add')"><div>×</div></button>
+            <button id="card_close" class="center" onclick="ClosePanel()"><div>×</div></button>
             <div id="card_title" class="center"></div>
             <div id="card_message" class="center"></div>
         </div>
@@ -257,7 +259,7 @@
     </button>
     <footer>
         <a href="/sitemap/">サイトマップ</a><br>
-        &copy; 2023-2024 ゆうきゆい
+        &copy; 2023-2025 ゆうきゆい
     </footer>
 <!-- footer_to -->
 

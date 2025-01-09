@@ -10,8 +10,9 @@
     <link rel="shortcut icon" type="image/png" sizes="512x512" href="/images/favicons/android-chrome-512x512.png">
     <link rel="manifest" href="/images/favicons/manifest.json">
     <link rel="stylesheet" href="/style.css?3.14">
-    <script src="/script.js?3.7" defer></script>
+    <script src="/script.js?3.8" defer></script>
     <script src="/scripts/Omikuji.js" defer></script>
+    <script src="/scripts/setting.js"></script>
 <!-- head_to -->
     <title>電通大生活を快適に送るためのTips - ゆいブログ</title>
     <meta name="description" content="電通大生活を快適に送るために便利な情報集です。随時追加予定。">
@@ -76,22 +77,25 @@
         <ol>
             <li><a href="#section-1">きみはだれ？</a></li>
             <li><a href="#section-2">はじめに</a></li>
-            <li><a href="#section-3">PC関係編</a></li>
-            <ul>
-                <li><a href="#section-3-1">公式ドキュメント(ITC ユーザーズガイド)を読む</a></li>
-                <li><a href="#section-3-2">UECアカウントの2要素認証でトークンアプリを使用する</a></li>
-                <li><a href="#section-3-3">VPNを設定する</a></li>
-                <li><a href="#section-3-4">Office、Adobeなどライセンスを使う</a></li>
-                <li><a href="#section-3-5">Google関係のページをUECクラウドアカウントで開く</a></li>
-            </ul>
-            <li><a href="#section-4">授業、履修、単位編</a></li>
-            <ul>
-                <li><a href="#section-4-1">履修登録を少し楽にする</a></li>
-            </ul>
-            <li><a href="#section-5">学生生活編</a></li>
-            <ul>
-                <li><a href="#section-5-1">キッチンカーのザンギがおいしい</a></li>
-            </ul>
+            <li><a href="#section-3">PC関係編</a>
+                <ul>
+                    <li><a href="#section-3-1">公式ドキュメント(ITC ユーザーズガイド)を読む</a></li>
+                    <li><a href="#section-3-2">UECアカウントの2要素認証でトークンアプリを使用する</a></li>
+                    <li><a href="#section-3-3">VPNを設定する</a></li>
+                    <li><a href="#section-3-4">Office、Adobeなどライセンスを使う</a></li>
+                    <li><a href="#section-3-5">Google関係のページをUECクラウドアカウントで開く</a></li>
+                </ul>
+            </li>
+            <li><a href="#section-4">授業、履修、単位編</a>
+                <ul>
+                    <li><a href="#section-4-1">履修登録を少し楽にする</a></li>
+                </ul>
+            </li>
+            <li><a href="#section-5">学生生活編</a>
+                <ul>
+                    <li><a href="#section-5-1">キッチンカーのザンギがおいしい</a></li>
+                </ul>
+            </li>
             <li><a href="#section-6">おわりに</a></li>
         </ol>
 
@@ -320,9 +324,9 @@
         </div>
     </aside>
     <div id="card">
-        <div id="card_background" onclick="ClosePanel('Add')"></div>
+        <div id="card_background" onclick="ClosePanel()"></div>
         <div id="card_contents">
-            <button id="card_close" class="center" onclick="ClosePanel('Add')"><div>×</div></button>
+            <button id="card_close" class="center" onclick="ClosePanel()"><div>×</div></button>
             <div id="card_title" class="center"></div>
             <div id="card_message" class="center"></div>
         </div>
@@ -336,7 +340,7 @@
     </button>
     <footer>
         <a href="/sitemap/">サイトマップ</a><br>
-        &copy; 2023-2024 ゆうきゆい
+        &copy; 2023-2025 ゆうきゆい
     </footer>
 <!-- footer_to -->
 

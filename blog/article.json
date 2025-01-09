@@ -6,6 +6,7 @@
         "date": "2023-07-10",
         "description": "テスト用のブログです。内容はほぼありません。",
         "thumbnail": "1.png",
+        "index": null,
         "tags": [
             "制作",
             "雑"
@@ -18,6 +19,7 @@
         "date": "2023-09-11",
         "description": "Intelのリテールクーラーを改造したハンディファンを作りました。",
         "thumbnail": "fun1x1.png",
+        "index": null,
         "tags": [
             "技術",
             "制作"
@@ -30,6 +32,7 @@
         "date": "2023-09-25",
         "description": "4年ぶり開催の調布花火を見に行って写真撮った話。",
         "thumbnail": "starmine_1x1.JPG",
+        "index": {"h2": "ol", "h3": "ul"},
         "tags": [
             "お出かけ",
             "写真"
@@ -47,6 +50,7 @@
         ],
         "description": "マウスのチャタリングを直しました。根本的な解決はしてない。",
         "thumbnail": "mouse_1x1.jpg",
+        "index": {"h2": "ol", "h3": "ul"},
         "tags": [
             "技術",
             "雑"
@@ -61,6 +65,7 @@
         "update": [],
         "description": "Googleドメインが滅びたのでCloudflareに移管しました。結構簡単にできました。",
         "thumbnail": "mail_from_cloudflare_1x1.jpg",
+        "index": {"h2": "ol", "h3": "ul"},
         "tags": [
             "技術"
         ]
@@ -74,6 +79,7 @@
         "update": [],
         "description": "プログラミングやマイコンなどを駆使してメカを作ることができるゲームです。楽しいのでやろうね。",
         "thumbnail": "",
+        "index": {"h2": "ol", "h3": "ul"},
         "tags": [
             "ゲーム"
         ]
@@ -89,6 +95,7 @@
         ],
         "description": "ジャンク修理のすすめ。ROMライターでお手軽に修理をはじめよう！",
         "thumbnail": "thumbnail.jpg",
+        "index": null,
         "tags": [
             "技術"
         ]
@@ -99,9 +106,12 @@
         "directory": "2024001",
         "date": "2024-01-26",
         "release_date": "2024-02-03",
-        "update": ["2024-05-04"],
+        "update": [
+            "2024-05-04"
+        ],
         "description": "ダイソーで買った1000円の完全ワイヤレスイヤホンを長期間使用してみての感想です。",
         "thumbnail": "thumbnail.jpg",
+        "index": {"h2": "ol", "h3": "ul"},
         "tags": [
             "激安",
             "レビュー"
@@ -116,6 +126,40 @@
         "update": [],
         "description": "電通大生活を快適に送るために便利な情報集です。随時追加予定。",
         "thumbnail": "",
-        "tags": ["Tips"]
+        "index": {"h2": "ol", "h3": "ul"},
+        "tags": [
+            "大学",
+            "Tips"
+        ]
+    },
+    {
+        "release": true,
+        "title": "iPhoneを2年間実質無料で使った話",
+        "directory": "2024003",
+        "date": "2024-10-24",
+        "release_date": "2024-10-24",
+        "update": [],
+        "description": "Softbankの新トクするサポートを使い、購入から返却までやったレビュー記事です。",
+        "thumbnail": "",
+        "index": {"h2": "ol", "h3": "ul"},
+        "tags": [
+            "雑",
+            "レビュー"
+        ]
+    },
+    {
+        "release": true,
+        "title": "大学用PCの選び方",
+        "directory": "2024004",
+        "date": "2024-12-19",
+        "release_date": "2024-12-19",
+        "update": [],
+        "description": "新入生向けに大学用PCをお勧めすることが流行っているみたいなので便乗します。電気通信大学での生活をもとに、私の独断と偏見と思想マシマシですので、参考程度に見てください。",
+        "thumbnail": "",
+        "index": {"h2": "ol", "h3": "ul", "fold": false, "add_number": true},
+        "tags": [
+            "大学",
+            "Tips"
+        ]
     }
 ]

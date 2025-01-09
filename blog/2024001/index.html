@@ -10,8 +10,9 @@
     <link rel="shortcut icon" type="image/png" sizes="512x512" href="/images/favicons/android-chrome-512x512.png">
     <link rel="manifest" href="/images/favicons/manifest.json">
     <link rel="stylesheet" href="/style.css?3.14">
-    <script src="/script.js?3.7" defer></script>
+    <script src="/script.js?3.8" defer></script>
     <script src="/scripts/Omikuji.js" defer></script>
+    <script src="/scripts/setting.js"></script>
 <!-- head_to -->
     <title>ダイソーの激安ワイヤレスイヤホン長期使用レビュー - ゆいブログ</title>
     <meta name="description" content="ダイソーで買った1000円の完全ワイヤレスイヤホンを長期間使用してみての感想です。">
@@ -64,19 +65,21 @@
         <ol>
             <li><a href="#section-1">はじめに</a></li>
             <li><a href="#section-2">概要</a></li>
-            <li><a href="#section-3">スペック</a></li>
-            <ul>
-                <li><a href="#section-3-1">本体スペック(イヤーピース換装後)</a></li>
-                <li><a href="#section-3-2">イヤホン部スペック</a></li>
-            </ul>
+            <li><a href="#section-3">スペック</a>
+                <ul>
+                    <li><a href="#section-3-1">本体スペック(イヤーピース換装後)</a></li>
+                    <li><a href="#section-3-2">イヤホン部スペック</a></li>
+                </ul>
+            </li>
             <li><a href="#section-4">外観</a></li>
-            <li><a href="#section-5">使用感</a></li>
-            <ul>
-                <li><a href="#section-5-1">音</a></li>
-                <li><a href="#section-5-2">操作性</a></li>
-                <li><a href="#section-5-3">電池</a></li>
-                <li><a href="#section-5-4">見た目</a></li>
-            </ul>
+            <li><a href="#section-5">使用感</a>
+                <ul>
+                    <li><a href="#section-5-1">音</a></li>
+                    <li><a href="#section-5-2">操作性</a></li>
+                    <li><a href="#section-5-3">電池</a></li>
+                    <li><a href="#section-5-4">見た目</a></li>
+                </ul>
+            </li>
             <li><a href="#section-6">新商品!?</a></li>
             <li><a href="#section-7">まとめ</a></li>
         </ol>
@@ -99,7 +102,7 @@
             <hr class="titlebar">
             <p>
                 ダイソーの1000円ワイヤレスイヤホンにはいくつかの種類があります。「TWS001」という型番のものが最初で、「TWS002」、「E-TWS-2」、「TWS_G273」などがあります。
-                <a href="https://jp.daisonet.com/products/4549131967487?a8=HUzSJU.vYqBv7vRo.F_vkqBSEAp1BquorF_E.qgyfEbvYqz-nLuAQqZTcMprurZ_nEILy9zanUzSOs00000023605001" class="og-card">完全ワイヤレスイヤホン（ＴＷＳ００１）</a>
+                <a href="https://jp.daisonet.com/products/4550480089379?srsltid=AfmBOorcchqRFmJ-QMwepdpMY9t4EdlwjgaLw-7kRadBTdc7cT3mMUYp" class="og-card">完全ワイヤレスイヤホン（ＴＷＳ００１、ホワイト）</a>
                 <a href="https://jp.daisonet.com/products/4550480211886?_pos=1&_sid=d4352f135&_ss=r" class="og-card">完全ワイヤレスイヤホン（ＴＷＳ００２）</a>
                 今回レビューする「TWS_G273」(商品名「完全ワイヤレスイヤホン」)はなぜか公式通販サイトには存在しませんでしたが、ダイソーワイヤレスイヤホンの二代目らしいです。<br>
                 <br>
@@ -152,7 +155,7 @@
                     <img class="blog_photo" src="images/イヤホン.jpg" alt="">
                     <span class="center">イヤホンの外観</span>
                 </div>
-                長いタイプのイヤホン、邪魔で好きじゃないのですが、これは小さくて軽くていいかんじです。<br>
+                AirPodsのような長いタイプのイヤホンは邪魔で好きじゃないのですが、これは小さくて軽くていいかんじです。<br>
                 iPhoneの切り抜き使ってみたらなんか変な感じになったな…
             </p>
         </section>
@@ -228,7 +231,7 @@
             <h2 id="section-7">まとめ</h2>
             <hr class="titlebar">
             <p>
-                amazonなどで激安ワイヤレスイヤホンを買うより、今回紹介したダイソーの1000円イヤホンを買うほうがコスパがよく、幸せになれると思います。<br>
+                Amazonなどで激安ワイヤレスイヤホンを買うより、今回紹介したダイソーの1000円イヤホンを買うほうがコスパがよく、幸せになれると思います。<br>
                 完全ワイヤレスイヤホンを使ってみたいけど高くて手が出ないよ…って人はとりあえずこれを買ってみるといいと思います。1000円で完全ワイヤレスイヤホンが試せるので、これをもとに自分に必要なスペックを考えてからちょっとお高いイヤホンに手を出すのもありかな。
             </p>
         </section> 
@@ -297,9 +300,9 @@
         </div>
     </aside>
     <div id="card">
-        <div id="card_background" onclick="ClosePanel('Add')"></div>
+        <div id="card_background" onclick="ClosePanel()"></div>
         <div id="card_contents">
-            <button id="card_close" class="center" onclick="ClosePanel('Add')"><div>×</div></button>
+            <button id="card_close" class="center" onclick="ClosePanel()"><div>×</div></button>
             <div id="card_title" class="center"></div>
             <div id="card_message" class="center"></div>
         </div>
@@ -313,7 +316,7 @@
     </button>
     <footer>
         <a href="/sitemap/">サイトマップ</a><br>
-        &copy; 2023-2024 ゆうきゆい
+        &copy; 2023-2025 ゆうきゆい
     </footer>
 <!-- footer_to -->
 

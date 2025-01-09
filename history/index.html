@@ -10,8 +10,9 @@
     <link rel="shortcut icon" type="image/png" sizes="512x512" href="/images/favicons/android-chrome-512x512.png">
     <link rel="manifest" href="/images/favicons/manifest.json">
     <link rel="stylesheet" href="/style.css?3.14">
-    <script src="/script.js?3.7" defer></script>
+    <script src="/script.js?3.8" defer></script>
     <script src="/scripts/Omikuji.js" defer></script>
+    <script src="/scripts/setting.js"></script>
 <!-- head_to -->
     
     <title>更新情報 - ゆいのページ</title>
@@ -54,11 +55,11 @@
             <h2>履歴</h2>
             <hr class="titlebar">
             <p>
-                <script src="/scripts/history.js" defer></script>
+                <!-- <script src="/scripts/history.js" defer></script> -->
                 <dl class="history">
                 <?php
                     error_reporting(0);
-                    $jsonPath = $_SERVER['DOCUMENT_ROOT'] .'/history.json';
+                    $jsonPath = $_SERVER['DOCUMENT_ROOT'] .'/files/history.json';
 
                     $historyArray = array_reverse(json_decode(file_get_contents($jsonPath)));
                     foreach ($historyArray as $A) {
@@ -129,9 +130,9 @@
         </div>
     </aside>
     <div id="card">
-        <div id="card_background" onclick="ClosePanel('Add')"></div>
+        <div id="card_background" onclick="ClosePanel()"></div>
         <div id="card_contents">
-            <button id="card_close" class="center" onclick="ClosePanel('Add')"><div>×</div></button>
+            <button id="card_close" class="center" onclick="ClosePanel()"><div>×</div></button>
             <div id="card_title" class="center"></div>
             <div id="card_message" class="center"></div>
         </div>
@@ -145,7 +146,7 @@
     </button>
     <footer>
         <a href="/sitemap/">サイトマップ</a><br>
-        &copy; 2023-2024 ゆうきゆい
+        &copy; 2023-2025 ゆうきゆい
     </footer>
 <!-- footer_to -->
 

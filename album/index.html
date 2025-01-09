@@ -10,8 +10,9 @@
     <link rel="shortcut icon" type="image/png" sizes="512x512" href="/images/favicons/android-chrome-512x512.png">
     <link rel="manifest" href="/images/favicons/manifest.json">
     <link rel="stylesheet" href="/style.css?3.14">
-    <script src="/script.js?3.7" defer></script>
+    <script src="/script.js?3.8" defer></script>
     <script src="/scripts/Omikuji.js" defer></script>
+    <script src="/scripts/setting.js"></script>
 <!-- head_to -->
     <title>アルバム - ゆいのページ</title>
     <meta name="description" content="画像集です。">
@@ -60,6 +61,7 @@
             <div class="album_icon_box"><img alt="ゆいのアイコン5" src="icons/5.jpg"></div>
             <div class="album_icon_box"><img alt="ゆいのアイコン6" src="icons/6.jpg"></div>
             <div class="album_icon_box"><img alt="ゆいのアイコン7" src="icons/7.jpg"></div>
+            <div class="album_icon_box"><img alt="ゆいのアイコン8" src="icons/8.jpg"></div>
         </div>
     </div>
     <div class="box">
@@ -77,6 +79,16 @@
                 <div class="album_photo_box"><img alt="2023調布花火4" src="/blog/2023-09-25_01/images/starmine4.JPG"></div>
                 <div class="album_photo_box"><img alt="2023調布花火5" src="/blog/2023-09-25_01/images/starmine5.JPG"></div>
                 <div class="album_photo_box"><img alt="2023調布花火6" src="/blog/2023-09-25_01/images/starmine6.JPG"></div>
+            </div>
+        </div>
+        <div class="inbox">
+            <h3>2024調布花火</h3>
+            <hr class="titlebar">
+            <p>
+                今年は行くつもりはなかったのですが家の近くから見えたので撮ってみました。
+            </p>
+            <div class="album_icon_wrapper">
+                <div class="album_photo_box"><img src="hanabi2024/hanabi2024001.JPG" alt="2024調布花火1"></div>
             </div>
         </div>
     </div>
@@ -138,9 +150,9 @@
         </div>
     </aside>
     <div id="card">
-        <div id="card_background" onclick="ClosePanel('Add')"></div>
+        <div id="card_background" onclick="ClosePanel()"></div>
         <div id="card_contents">
-            <button id="card_close" class="center" onclick="ClosePanel('Add')"><div>×</div></button>
+            <button id="card_close" class="center" onclick="ClosePanel()"><div>×</div></button>
             <div id="card_title" class="center"></div>
             <div id="card_message" class="center"></div>
         </div>
@@ -154,7 +166,7 @@
     </button>
     <footer>
         <a href="/sitemap/">サイトマップ</a><br>
-        &copy; 2023-2024 ゆうきゆい
+        &copy; 2023-2025 ゆうきゆい
     </footer>
 <!-- footer_to -->
 
